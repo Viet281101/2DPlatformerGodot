@@ -3,8 +3,6 @@
 [ext_resource path="res://res/holygades_background.jpg" type="Texture" id=1]
 [ext_resource path="res://Scripts/Credits.gd" type="Script" id=2]
 
-
-
 [sub_resource type="StyleBoxFlat" id=1]
 border_width_left = 10
 border_width_top = 10
@@ -83,6 +81,11 @@ Viet Nguyen
 Character Animation:
 Viet Nguyen
 
+Most are drawn from 
+OpenGameArt.Org reference 
+images and redrawn and edited 
+in KRITA
+
 ////////////////////////////////////////
 
 Animation:
@@ -99,6 +102,15 @@ Music Song:
 The dark jungle music - AztecTemple
 
 ////////////////////////////////////////
+
+Music Effect:
+Viet Nguyen
+
+By cut and change from some 
+hot meme in the internet
+The orther are make by Audacity
+
+/////////////////////////////////////////
 
 Godot Programmer:
 Viet Nguyen
