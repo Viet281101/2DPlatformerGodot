@@ -1,0 +1,10 @@
+[gd_scene load_steps=3 format=2]
+
+[ext_resource path="res://music/attack_sound.wav" type="AudioStream" id=1]
+[ext_resource path="res://Scripts/AttackSound.gd" type="Script" id=2]
+
+[node name="AttackSound" type="Node"]
+script = ExtResource( 2 )
+
+[node name="shoot" type="AudioStreamPlayer" parent="."]
+stream = ExtResource( 1 )

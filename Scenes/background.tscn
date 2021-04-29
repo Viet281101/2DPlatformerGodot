@@ -1,0 +1,13 @@
+[gd_scene load_steps=2 format=2]
+
+[ext_resource path="res://res/holygades_background.jpg" type="Texture" id=1]
+
+[node name="background" type="CanvasLayer"]
+layer = -100
+
+[node name="ParallaxBackground" type="ParallaxBackground" parent="."]
+
+[node name="holygades_bg" type="Sprite" parent="ParallaxBackground"]
+position = Vector2( 489.402, 306.086 )
+scale = Vector2( 0.72846, 0.72593 )
+texture = ExtResource( 1 )
