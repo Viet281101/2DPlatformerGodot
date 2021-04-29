@@ -2,6 +2,8 @@
 
 [ext_resource path="res://Scripts/PlayerDetectionZone.gd" type="Script" id=1]
 
+
+
 [sub_resource type="CircleShape2D" id=1]
 radius = 192.003
 

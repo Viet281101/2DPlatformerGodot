@@ -110,6 +110,8 @@ Click \"M\" key to pick an item
 6) FIRE BALL:
 \"Q\" key to shoot a fireball in left
 \"W\" key to shoot a fireball in right
+p/s:
+You can shoot no limit the fireballs
 
 
 
@@ -151,7 +153,6 @@ max_health = 20
 [node name="PlayerUI" parent="Play" instance=ExtResource( 7 )]
 [connection signal="pressed" from="IntroGame/Return" to="Play/Player" method="_on_Return_pressed"]
 [connection signal="pressed" from="IntroGame/Return" to="." method="_on_Return_pressed"]
-[connection signal="no_health" from="Play/EnenmyWeek/Stats" to="Play/EnenmyWeek" method="_on_Stats_no_health"]
 
 [editable path="Play/Player"]
 

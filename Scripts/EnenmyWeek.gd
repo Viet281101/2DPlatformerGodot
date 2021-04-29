@@ -50,13 +50,19 @@ func _physics_process(delta):
 
 func seek_player():
 	if playerDetectionZone.can_see_player():
+		MonsterSound.play_sound()
 		state = CHASE
 
 func _on_Hurt_area_entered(area):
+	AttackSound.play_sound()
+	$AnimationPlayer.play("hurt")
 	stats.health -= 1
+	$AnimationPlayer.play("hurt")
 	knockback = Vector2.RIGHT * 120
+	$AnimationPlayer.play("hurt")
 
 func _on_Stats_no_health():
+	ScreamSound.play_scream()
 	queue_free()
 	var enenmyDeathEffect = Effect.instance()
 	get_parent().add_child(enenmyDeathEffect)

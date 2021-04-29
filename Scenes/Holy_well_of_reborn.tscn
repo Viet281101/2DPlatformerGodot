@@ -3,6 +3,8 @@
 [ext_resource path="res://res/ProjectUtumno_full.png" type="Texture" id=1]
 [ext_resource path="res://Scripts/Holy_well_of_reborn.gd" type="Script" id=2]
 
+
+
 [sub_resource type="CapsuleShape2D" id=1]
 radius = 14.5832
 height = 2.99452

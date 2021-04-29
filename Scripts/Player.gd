@@ -48,6 +48,7 @@ func _physics_process(delta):
 			fireball.set_fireball_direction(-1)
 		get_parent().add_child(fireball)
 		fireball.position = $Position2D.global_position
+		AttackSound.play_sound()
 		
 	if Input.is_action_just_pressed("ui_focus_prev"):
 		#To treat HP:)
@@ -59,6 +60,7 @@ func _physics_process(delta):
 			fireball2.set_fireball2_direction(-1)
 		get_parent().add_child(fireball2)
 		fireball2.position = $Position2D.global_position
+		AttackSound.play_sound()
 	
 	########JumpForce:
 	if Input.is_action_just_pressed("ui_jump_force") && jumpCount < extraJumps:
@@ -142,6 +144,7 @@ func _on_bloodwell_body_entered(body):
 
 
 func _on_Hurt_area_entered(area):
+	HurtSound.play_sound()
 	ani.play("hurt")
 	stats.health -= 1
 	ani.play("hurt")

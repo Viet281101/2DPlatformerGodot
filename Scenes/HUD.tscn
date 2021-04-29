@@ -3,6 +3,8 @@
 [ext_resource path="res://Scripts/HUD.gd" type="Script" id=1]
 [ext_resource path="res://res/coin_uni1.jpg" type="Texture" id=2]
 
+
+
 [sub_resource type="StyleBoxFlat" id=16]
 bg_color = Color( 0.6, 0.6, 0.6, 0.364706 )
 corner_radius_top_left = 10

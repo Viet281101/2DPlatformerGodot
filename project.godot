@@ -22,6 +22,13 @@ config/icon="res://icon.png"
 [autoload]
 
 PlayerStats="*res://Scenes/PlayerStats.tscn"
+AttackSound="*res://Scenes/music_scene/AttackSound.tscn"
+HurtSound="*res://Scenes/music_scene/HurtSound.tscn"
+MenuClickSound="*res://Scenes/music_scene/MenuClickSound.tscn"
+MonsterSound="*res://Scenes/music_scene/MONSTER_SOUND.tscn"
+MonsterSound2="*res://Scenes/music_scene/MONSTER_SOUND_2.tscn"
+MusicBackGround="*res://Scenes/music_scene/MusicBackGround.tscn"
+ScreamSound="*res://Scenes/music_scene/ScreamSound.tscn"
 
 [input]
 

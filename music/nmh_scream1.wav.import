@@ -1,0 +1,21 @@
+[remap]
+
+importer="wav"
+type="AudioStreamSample"
+path="res://.import/nmh_scream1.wav-1e80bb1c1f7c389bcaf06fd88bbfeb4d.sample"
+
+[deps]
+
+source_file="res://music/nmh_scream1.wav"
+dest_files=[ "res://.import/nmh_scream1.wav-1e80bb1c1f7c389bcaf06fd88bbfeb4d.sample" ]
+
+[params]
+
+force/8_bit=false
+force/mono=false
+force/max_rate=false
+force/max_rate_hz=44100
+edit/trim=false
+edit/normalize=false
+edit/loop=false
+compress/mode=0

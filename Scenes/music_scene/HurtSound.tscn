@@ -1,0 +1,10 @@
+[gd_scene load_steps=3 format=2]
+
+[ext_resource path="res://music/hurt_sound.wav" type="AudioStream" id=1]
+[ext_resource path="res://Scripts/HurtSound.gd" type="Script" id=2]
+
+[node name="HurtSound" type="Node"]
+script = ExtResource( 2 )
+
+[node name="hurtSound" type="AudioStreamPlayer" parent="."]
+stream = ExtResource( 1 )
