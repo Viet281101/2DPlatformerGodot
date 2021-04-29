@@ -1,0 +1,111 @@
+[gd_scene load_steps=9 format=2]
+
+[ext_resource path="res://res/BalsamiqSans-Bold.ttf" type="DynamicFontData" id=1]
+[ext_resource path="res://Scripts/GameOverScreen.gd" type="Script" id=2]
+
+[sub_resource type="StyleBoxFlat" id=1]
+bg_color = Color( 0.529412, 0.619608, 0.478431, 1 )
+border_width_left = 10
+border_width_top = 10
+border_width_right = 10
+border_width_bottom = 10
+border_color = Color( 0.0352941, 0.364706, 0.0509804, 1 )
+shadow_color = Color( 0.0745098, 0.129412, 0.027451, 0.6 )
+shadow_size = 50
+
+[sub_resource type="DynamicFont" id=2]
+size = 64
+font_data = ExtResource( 1 )
+
+[sub_resource type="DynamicFont" id=3]
+size = 32
+font_data = ExtResource( 1 )
+
+[sub_resource type="DynamicFont" id=4]
+size = 32
+font_data = ExtResource( 1 )
+
+[sub_resource type="DynamicFontData" id=5]
+font_path = "res://res/BalsamiqSans-Bold.ttf"
+
+[sub_resource type="DynamicFont" id=6]
+size = 36
+font_data = SubResource( 5 )
+
+[node name="GameOverScreen" type="CanvasLayer"]
+script = ExtResource( 2 )
+
+[node name="PanelContainer" type="PanelContainer" parent="."]
+anchor_right = 1.0
+anchor_bottom = 1.0
+custom_styles/panel = SubResource( 1 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="MarginContainer" type="MarginContainer" parent="PanelContainer"]
+margin_left = 10.0
+margin_top = 10.0
+margin_right = 1014.0
+margin_bottom = 590.0
+custom_constants/margin_right = 40
+custom_constants/margin_top = 40
+custom_constants/margin_left = 40
+custom_constants/margin_bottom = 40
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Rows" type="VBoxContainer" parent="PanelContainer/MarginContainer"]
+margin_left = 40.0
+margin_top = 40.0
+margin_right = 964.0
+margin_bottom = 540.0
+custom_constants/separation = 80
+
+[node name="Title" type="Label" parent="PanelContainer/MarginContainer/Rows"]
+modulate = Color( 0.176471, 0.411765, 0.0588235, 1 )
+margin_right = 924.0
+margin_bottom = 78.0
+custom_fonts/font = SubResource( 2 )
+text = "GAME OVER"
+align = 1
+
+[node name="CenterContainer" type="CenterContainer" parent="PanelContainer/MarginContainer/Rows"]
+margin_top = 158.0
+margin_right = 924.0
+margin_bottom = 338.0
+
+[node name="VBoxContainer" type="VBoxContainer" parent="PanelContainer/MarginContainer/Rows/CenterContainer"]
+margin_left = 386.0
+margin_right = 538.0
+margin_bottom = 180.0
+custom_constants/separation = 20
+
+[node name="RestartButton" type="Button" parent="PanelContainer/MarginContainer/Rows/CenterContainer/VBoxContainer"]
+modulate = Color( 0.184314, 0.654902, 0.0941176, 1 )
+margin_right = 152.0
+margin_bottom = 45.0
+custom_fonts/font = SubResource( 3 )
+custom_colors/font_color_disabled = Color( 0.14902, 0.45098, 0.0196078, 1 )
+text = "RESTART"
+
+[node name="QuitButton" type="Button" parent="PanelContainer/MarginContainer/Rows/CenterContainer/VBoxContainer"]
+pause_mode = 2
+modulate = Color( 0.196078, 0.6, 0.0823529, 1 )
+margin_top = 65.0
+margin_right = 152.0
+margin_bottom = 110.0
+custom_fonts/font = SubResource( 4 )
+text = "QUIT"
+
+[node name="GoToMenu" type="Button" parent="PanelContainer/MarginContainer/Rows/CenterContainer/VBoxContainer"]
+modulate = Color( 0.156863, 0.478431, 0.054902, 1 )
+margin_top = 130.0
+margin_right = 152.0
+margin_bottom = 180.0
+custom_fonts/font = SubResource( 6 )
+text = "MENU"
+[connection signal="pressed" from="PanelContainer/MarginContainer/Rows/CenterContainer/VBoxContainer/RestartButton" to="." method="_on_RestartButton_pressed"]
+[connection signal="pressed" from="PanelContainer/MarginContainer/Rows/CenterContainer/VBoxContainer/QuitButton" to="." method="_on_QuitButton_pressed"]
+[connection signal="pressed" from="PanelContainer/MarginContainer/Rows/CenterContainer/VBoxContainer/GoToMenu" to="." method="_on_GoToMenu_pressed"]
