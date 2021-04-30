@@ -102,6 +102,7 @@ func move_state(delta):
 		if Input.is_action_just_pressed("ui_up"):
 			velocity.y -= jump
 			ani.play("jump")
+			Swipe.play_sound()
 		else:
 			if movement_x == 0:
 				ani.play("fall")
