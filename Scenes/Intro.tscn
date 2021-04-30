@@ -151,9 +151,24 @@ position = Vector2( 734.943, 183.315 )
 max_health = 20
 
 [node name="PlayerUI" parent="Play" instance=ExtResource( 7 )]
+
+[node name="Panel" parent="Play/PlayerUI" index="0"]
+margin_left = -108.0
+margin_right = -2.0
+margin_bottom = 15.0
+
+[node name="HealthUI" parent="Play/PlayerUI" index="1"]
+anchor_left = 1.0
+anchor_right = 1.0
+margin_left = -96.0
+margin_top = 0.0
+margin_right = 0.0
+margin_bottom = 13.0
 [connection signal="pressed" from="IntroGame/Return" to="Play/Player" method="_on_Return_pressed"]
 [connection signal="pressed" from="IntroGame/Return" to="." method="_on_Return_pressed"]
 
 [editable path="Play/Player"]
 
 [editable path="Play/EnenmyWeek"]
+
+[editable path="Play/PlayerUI"]
