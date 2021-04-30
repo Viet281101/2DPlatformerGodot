@@ -173,8 +173,11 @@ func _on_PlayerStats_no_health():
 
 
 
-func _on_go_up_body_entered(body):
-	velocity.y -= holywell
 
 
 
+
+
+
+func _on_Trap_body_entered(body):
+	pass # Replace with function body.
